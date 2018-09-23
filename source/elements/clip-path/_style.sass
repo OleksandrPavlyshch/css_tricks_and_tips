@@ -1,0 +1,26 @@
+.clip_paht
+	border: 1px solid #000
+	height: calc(100% - 40px)
+	overflow: auto
+	&-slide
+		height: 100%
+		border: 1px solid #000
+		position: relative
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0)
+		&-1::before
+			background-color: red
+		&-2::before
+			background: blue
+		&-3::before
+			background-color: pink
+		&-4::before
+			background-color: green
+		&::before
+			position: fixed
+			left: 50%
+			top: 50%
+			content: ''
+			border-radius: 50%
+			width: 200px
+			height: 200px
+			border: 1px solid #000
