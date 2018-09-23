@@ -17,7 +17,7 @@
     "browser-sync": "^2.23.6",
     "css-mqpacker": "^6.0.2",
     "fs": "0.0.2",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-bower": "0.0.14",
     "gulp-changed": "^3.2.0",
     "gulp-cheerio": "^0.6.3",
@@ -50,5 +50,8 @@
     "require-yaml": "0.0.1",
     "run-sequence": "^2.2.1",
     "wiredep": "^4.0.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.0.1"
   }
 }
