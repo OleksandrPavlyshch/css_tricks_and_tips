@@ -4,12 +4,16 @@
 
 <section class="slide">
 	<pre>
+		<code>.wrapper {</code>
+		<code>	--size: 200px;</code>
+		<code>}</code>
+		<code>	</code>
 		<code>.block-1 {</code>
-		<code>	width: var(--x);</code>
+		<code>	width: var(--size); //200px</code>
 		<code>}</code>
 		<code>	</code>
 		<code>.block-2 {</code>
-		<code>	width: calc( var(--x) * 2 );</code>
+		<code>	height: calc( var(--size) * 2 ) //400px;</code>
 		<code>}</code>
 	</pre>
 </section>
@@ -36,5 +40,12 @@
 <section class="slide">
 	<iframe class="all_screen_iframe" src="variable_demo.html"></iframe>
 </section>
+
+<div class="slide centr-align">
+	<br><br>
+	<a href="https://caniuse.com/#feat=css-variables">
+		<img style="max-width: 100%;" src="./img/caniuse-variables.png" alt="">
+	</a>
+</div>
 
 
