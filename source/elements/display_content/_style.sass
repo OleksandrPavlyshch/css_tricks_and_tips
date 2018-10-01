@@ -1,0 +1,24 @@
+.display_content_demo
+	display: flex
+	padding-top: 50px
+	justify-content: space-around
+	.logo
+		order: 2
+		font-size: 60px
+		font-weight: 700
+	a
+		text-decoration: none
+		background: none
+		// color: #000
+		cursor: pointer
+		&:hover
+			color: #00f
+	nav
+		display: contents
+		a
+			display: inline-block
+			padding: .3em
+			border: 1px solid
+			align-self: center
+			&:nth-child(n+3)
+				order: 3
