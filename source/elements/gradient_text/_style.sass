@@ -2,13 +2,15 @@
 	display: inline-block
 	color: transparent
 	font-weight: 700
-	background-image: linear-gradient(to right, #6bbd96, #33a3cc 50%, #fc5c7d, #6a82fb)
 	-webkit-background-clip: text
 	background-clip: text
 	transition: all 1s ease
-	background-size: 200% 100%;
-	&:hover
-		background-image: linear-gradient(to right, #fc5c7d, #6a82fb)
-		// -webkit-background-clip: text
-		// background-clip: text
-		// background-position: 100% 0
+	&-default
+		background-image: linear-gradient(to right, #6bbd96, #33a3cc)
+		&:hover
+			background-image: linear-gradient(to right, #fc5c7d, #6a82fb)
+	&-hover
+		background-size: 200% 100%;
+		background-image: linear-gradient(to right, #6bbd96, #33a3cc 50%, #fc5c7d, #6a82fb)
+		&:hover
+			background-position: 100% 0

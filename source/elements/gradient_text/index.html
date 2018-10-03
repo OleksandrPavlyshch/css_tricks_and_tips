@@ -5,11 +5,11 @@
 </div>
 
 <div class="slide">
-	<h2 class="gradient_text">Gradient Text</h2>
+	<h2 class="gradient_text gradient_text-default">Gradient Text</h2>
 	<br>
-	<p class="gradient_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque.</p>
+	<p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque.</p>
 	<br>
-	<p class="gradient_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste voluptatum officia inventore mollitia culpa! Alias omnis iure deleniti sed!</p>
+	<p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste voluptatum officia inventore mollitia culpa! Alias omnis iure deleniti sed!</p>
 </div>
 
 <div class="slide">
@@ -18,15 +18,12 @@
 		<code>	background-image: linear-gradient(....);</code>
 		<code>	display: inline-block;</code>
 		<code>	color: transparent;</code>
+		<code>	transition: all 1s ease</code>
 		<code>	-webkit-background-clip: text;</code>
 		<code>	background-clip: text;</code>
 		<code>}</code>
-		<code>	</code>
-		<code>	</code>
-		<code>	</code>
 	</pre>
 </div>
-
 
 <div class="slide">
 	<h2 class="gradient_text gradient_text-hover">Gradient Text Hover</h2>
@@ -34,4 +31,20 @@
 	<p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque.</p>
 	<br>
 	<p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste voluptatum officia inventore mollitia culpa! Alias omnis iure deleniti sed!</p>
+</div>
+
+<div class="slide">
+	<pre>
+		<code>.gradient_text {</code>
+		<code>	background-image: linear-gradient(
+			to right, 
+			#6bbd96, #33a3cc 50%, 
+			#fc5c7d, #6a82fb);</code>
+		<code>	background-size: 200% 100%;</code>
+		<code>}</code>
+		<code>	</code>
+		<code>.gradient_text:hover {</code>
+		<code>	background-position: 100% 0</code>
+		<code>}</code>
+	</pre>
 </div>
