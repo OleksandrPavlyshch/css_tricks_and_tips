@@ -77,7 +77,7 @@
       <h2 class="shout">Selectors</h2>
     </section>
     <section class="slide">
-      <h2>.selector + .selector</h2>
+      <h2>.element + .element</h2>
       <pre>
 		<code>li + li {</code>
 		<code>	border-left: 1px solid #000;</code>
@@ -112,7 +112,7 @@
       </div>
     </section>
     <section class="slide">
-      <h2>.selector ~ .selector</h2>
+      <h2>.element ~ .element</h2>
       <pre>
 		<code>checkboks:checked ~ .span1 {</code>
 		<code>	background-color: red;</code>
@@ -406,9 +406,9 @@
     <div class="slide">
       <h2 class="gradient_text gradient_text-default">Gradient Text</h2>
       <br>
-      <p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque.</p>
+      <p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <br>
-      <p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste voluptatum officia inventore mollitia culpa! Alias omnis iure deleniti sed!</p>
+      <p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ullam vero aspernatur beatae. Ut magnam nostrum cupiditate iure voluptatibus facere sed, dolorum consectetur possimus laudantium perferendis ipsam aliquam eius vitae nemo natus molestias illum praesentium ullam, eveniet libero odio ipsa.</p>
     </div>
     <div class="slide">
       <pre>
@@ -425,9 +425,9 @@
     <div class="slide">
       <h2 class="gradient_text gradient_text-hover">Gradient Text Hover</h2>
       <br>
-      <p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque.</p>
+      <p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
       <br>
-      <p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste voluptatum officia inventore mollitia culpa! Alias omnis iure deleniti sed!</p>
+      <p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ullam vero aspernatur beatae. Ut magnam nostrum cupiditate iure voluptatibus facere sed, dolorum consectetur possimus laudantium perferendis ipsam aliquam eius vitae nemo natus molestias illum praesentium ullam, eveniet libero odio ipsa</p>
     </div>
     <div class="slide">
       <pre>
@@ -470,29 +470,66 @@
 		<code>}</code>
 	</pre>
     </section>
-    <section class="slide">
-      <h2 class="shout">Brightness</h2>
-    </section>
-    <section class="slide brightness_demo">
-      <div class="half">
-        <h3>opacity</h3>
-        <img class="brightness_demo-image brightness_demo-image_opacity" src="./img/deadpool-1.png" alt="Deadpool">
-      </div>
-      <div class="half">
-        <h3>filter: brightness</h3>
-        <img class="brightness_demo-image brightness_demo-image_filter_brightness" src="./img/deadpool-1.png" alt="Deadpool">
-      </div>
-    </section>
-    <section class="slide">
-      <h2>filter: brightness</h2>
+    <div class="slide">
+      <h2 class="shout">Нестандартные фигуры</h2>
+    </div>
+    <div class="slide">
+      <iframe class="all_screen_iframe" scrolling='no' title='Skewed Flexbox Panels' src='//codepen.io/hexagoncircle/embed/yOwvQV/?height=368&theme-id=23417&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/hexagoncircle/pen/yOwvQV/'>Skewed Flexbox Panels</a> by Ryan Mulligan (<a href='https://codepen.io/hexagoncircle'>@hexagoncircle</a>) on <a href='https://codepen.io'>CodePen</a>. </iframe>
+    </div>
+    <div class="slide">
+      <h2>Параллелограм</h2>
       <pre>
-		<code>.darked {</code>
-		<code>	filter: brightness(0.4);</code>
+		<code>.panel {</code>
+		<code>	transform: skew(45deg);</code>
+		<code>}</code>
+		<code>.panel-inner{</code>
+		<code>	transform: skew(-45deg);</code>
 		<code>}</code>
 	</pre>
-    </section>
+    </div>
     <div class="slide">
-      <h2 class="shout">Нестандартные формы</h2>
+      <div class="tabs-demo">
+        <ul>
+          <li>tab 1</li>
+          <li class="selected">tab 2</li>
+          <li>tab 3</li>
+          <li>tab 4</li>
+        </ul>
+      </div>
+      <div class="tabs-demo left-corner">
+        <ul>
+          <li>tab 1</li>
+          <li class="selected">tab 2</li>
+          <li>tab 3</li>
+          <li>tab 4</li>
+        </ul>
+      </div>
+      <div class="tabs-demo right-corner">
+        <ul>
+          <li>tab 1</li>
+          <li class="selected">tab 2</li>
+          <li>tab 3</li>
+          <li>tab 4</li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide">
+      <h2>Трапеция</h2>
+      <pre>
+		<code>.tab::before {</code>
+		<code>	transform-origin: 50% 100%;</code>
+		<code>	transform: perspective(.5em) rotateX(5deg);</code>
+		<code>	position: absolute;</code>
+		<code>	z-index: -1</code>
+		<code>}</code>
+		<code>.right-corner .tab::before {</code>
+		<code>	transform-origin: 100% 100%</code>
+		<code>}</code>
+	</pre>
+    </div>
+    <div class="slide"></div>
+    <div class="slide">
+      <h2 class="shout">Очень нестандартные фигуры</h2>
     </div>
     <section class="slide">
       <h2 class="shout">Clip-path</h2>
