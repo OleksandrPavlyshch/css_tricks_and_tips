@@ -1,3 +1,29 @@
+
+.currentcolor {
+	&-demo {
+		text-align: center;
+		padding-top: 150px;
+	}
+	&_button {
+		color: #54d9c5;
+		display: inline-block;
+		font-size: 45px;
+		margin: 50px auto;
+		padding: 10px 20px;
+		border: 1px solid;
+		text-shadow: 0 0 5px;
+		border-radius: 15px;
+		box-shadow: 0 0 2px 2px;
+		margin: 15px;
+		&.blue{
+			color: #6a82fb;
+		}
+		&.red{
+			color: #fc5c7d;
+		}
+}
+}
+
 .variable_demo {
 	height: 100vh;
 	background-color: $black;
