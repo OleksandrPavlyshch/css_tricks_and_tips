@@ -1,3 +1,65 @@
 <div class="slide">
 	<h2 class="shout">Нестандартные фигуры</h2>
 </div>
+
+<div class="slide">
+	<iframe class="all_screen_iframe" scrolling='no' title='Skewed Flexbox Panels' src='//codepen.io/hexagoncircle/embed/yOwvQV/?height=368&theme-id=23417&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/hexagoncircle/pen/yOwvQV/'>Skewed Flexbox Panels</a> by Ryan Mulligan (<a href='https://codepen.io/hexagoncircle'>@hexagoncircle</a>) on <a href='https://codepen.io'>CodePen</a>.
+	</iframe>
+</div>
+
+<div class="slide">
+	<h2>Параллелограм</h2>
+	<pre>
+		<code>.panel {</code>
+		<code>	transform: skew(45deg);</code>
+		<code>}</code>
+		<code>.panel-inner{</code>
+		<code>	transform: skew(-45deg);</code>
+		<code>}</code>
+	</pre>
+</div>
+
+<div class="slide">
+	<div class="tabs-demo">
+		<ul>
+			<li>tab 1</li>
+			<li class="selected">tab 2</li>
+			<li>tab 3</li>
+			<li>tab 4</li>
+		</ul>
+	</div>
+	<div class="tabs-demo left-corner">
+		<ul>
+			<li>tab 1</li>
+			<li class="selected">tab 2</li>
+			<li>tab 3</li>
+			<li>tab 4</li>
+		</ul>
+	</div>
+	<div class="tabs-demo right-corner">
+		<ul>
+			<li>tab 1</li>
+			<li class="selected">tab 2</li>
+			<li>tab 3</li>
+			<li>tab 4</li>
+		</ul>
+	</div>
+
+</div>
+
+<div class="slide">
+	<h2>Трапеция</h2>
+	<pre>
+		<code>.tab::before {</code>
+		<code>	transform-origin: 50% 100%;</code>
+		<code>	transform: perspective(.5em) rotateX(5deg);</code>
+		<code>	position: absolute;</code>
+		<code>	z-index: -1</code>
+		<code>}</code>
+		<code>.right-corner .tab::before {</code>
+		<code>	transform-origin: 100% 100%</code>
+		<code>}</code>
+	</pre>
+</div>
+
+<div class="slide"></div>
