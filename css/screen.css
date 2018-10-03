@@ -639,6 +639,36 @@ input[type="submit"] {
   max-height: 40%;
 }
 
+.slide .gradient_text {
+  display: inline-block;
+  color: transparent;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.slide .gradient_text-default {
+  background-image: -webkit-gradient(linear, left top, right top, from(#6bbd96), to(#33a3cc));
+  background-image: linear-gradient(to right, #6bbd96, #33a3cc);
+}
+
+.slide .gradient_text-default:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fc5c7d), to(#6a82fb));
+  background-image: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.slide .gradient_text-hover {
+  background-size: 200% 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6bbd96), color-stop(50%, #33a3cc), color-stop(#fc5c7d), to(#6a82fb));
+  background-image: linear-gradient(to right, #6bbd96, #33a3cc 50%, #fc5c7d, #6a82fb);
+}
+
+.slide .gradient_text-hover:hover {
+  background-position: 100% 0;
+}
+
 .vertical_text_demo h3 {
   text-align: center;
   margin-bottom: 15px;

@@ -379,6 +379,72 @@
       <img style="max-width: 95%;" src="./img/css_variabless.png" alt="">
     </div>
     <section class="slide">
+      <h2 class="shout">Vertical Text</h2>
+    </section>
+    <section class="slide">
+      <br>
+      <pre>
+		<code>p {</code>
+		<code>	writing-mode: tb-rl;</code>
+		<code>	transform: scale(-1);</code>
+		<code>}</code>
+	</pre>
+    </section>
+    <section class="slide vertical_text_demo">
+      <div class="half">
+        <h3>writing-mode: tb-rl</h3>
+        <p class="text-t-b"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam id debitis aperiam expedita magni esse. </p>
+      </div>
+      <div class="half">
+        <h3> writing-mode: tb-rl <br> transform: scale(-1) </h3>
+        <p class="text-b-t"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam id debitis aperiam expedita magni esse. </p>
+      </div>
+    </section>
+    <div class="slide">
+      <h2 class="shout"> Текст с градиентом </h2>
+    </div>
+    <div class="slide">
+      <h2 class="gradient_text gradient_text-default">Gradient Text</h2>
+      <br>
+      <p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque.</p>
+      <br>
+      <p class="gradient_text gradient_text-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste voluptatum officia inventore mollitia culpa! Alias omnis iure deleniti sed!</p>
+    </div>
+    <div class="slide">
+      <pre>
+		<code>.gradient_text {</code>
+		<code>	background-image: linear-gradient(....);</code>
+		<code>	display: inline-block;</code>
+		<code>	color: transparent;</code>
+		<code>	transition: all 1s ease</code>
+		<code>	-webkit-background-clip: text;</code>
+		<code>	background-clip: text;</code>
+		<code>}</code>
+	</pre>
+    </div>
+    <div class="slide">
+      <h2 class="gradient_text gradient_text-hover">Gradient Text Hover</h2>
+      <br>
+      <p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, neque.</p>
+      <br>
+      <p class="gradient_text gradient_text-hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit iste voluptatum officia inventore mollitia culpa! Alias omnis iure deleniti sed!</p>
+    </div>
+    <div class="slide">
+      <pre>
+		<code>.gradient_text {</code>
+		<code>	background-image: linear-gradient(
+			to right, 
+			#6bbd96, #33a3cc 50%, 
+			#fc5c7d, #6a82fb);</code>
+		<code>	background-size: 200% 100%;</code>
+		<code>}</code>
+		<code>	</code>
+		<code>.gradient_text:hover {</code>
+		<code>	background-position: 100% 0</code>
+		<code>}</code>
+	</pre>
+    </div>
+    <section class="slide">
       <h2 class="shout">Drop-shadow</h2>
     </section>
     <section class="slide shadow_demo">
@@ -406,7 +472,7 @@
     </section>
     <section class="slide brightness_demo">
       <div class="half">
-        <h3>Opacity</h3>
+        <h3>opacity</h3>
         <img class="brightness_demo-image brightness_demo-image_opacity" src="./img/deadpool-1.png" alt="Deadpool">
       </div>
       <div class="half">
@@ -452,28 +518,6 @@
     <div class="slide">
       <h2 class="shout">Обтекающий картинки текст</h2>
     </div>
-    <section class="slide">
-      <h2 class="shout">Vertical Text</h2>
-    </section>
-    <section class="slide">
-      <br>
-      <pre>
-		<code>p {</code>
-		<code>	writing-mode: tb-rl;</code>
-		<code>	transform: scale(-1);</code>
-		<code>}</code>
-	</pre>
-    </section>
-    <section class="slide vertical_text_demo">
-      <div class="half">
-        <h3>writing-mode: tb-rl</h3>
-        <p class="text-t-b"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam id debitis aperiam expedita magni esse. </p>
-      </div>
-      <div class="half">
-        <h3> writing-mode: tb-rl <br> transform: scale(-1) </h3>
-        <p class="text-b-t"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam id debitis aperiam expedita magni esse. </p>
-      </div>
-    </section>
     <section class="slide">
       <h2 class="shout">Browser Behavior</h2>
     </section>
