@@ -4,7 +4,8 @@ const gulp = require('gulp')
 	, gulpif = require('gulp-if')
 	, concat = require('gulp-concat')
 	, configs = require('../configs')
-	, jsFileName = "app.js";
+	, jsFileName = "app.js"
+	, watch = require('gulp-watch');
 
 //scripts
 gulp.task('scripts', () => {
@@ -16,6 +17,6 @@ gulp.task('scripts', () => {
 });
 
 gulp.task('scripts:watch', () => {
-	gulp.watch(configs.source.js, ['scripts']);
-	gulp.watch(configs.source.vendorJs + '*.js', ['copy:vendor:js']);
+	watch(configs.source.js, ['scripts']);
+	watch(configs.source.vendorJs + '*.js', ['copy:vendor:js']);
 });

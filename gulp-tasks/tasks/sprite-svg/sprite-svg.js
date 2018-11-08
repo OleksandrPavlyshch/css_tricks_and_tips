@@ -4,7 +4,8 @@ const gulp = require("gulp")
 	, svgmin = require('gulp-svgmin')
 	, cheerio = require('gulp-cheerio')
 	, replace = require('gulp-replace')
-	, configs = require('../../configs');
+	, configs = require('../../configs')
+	, watch = require('gulp-watch');
 
 
 gulp.task('sprite:svg', () => gulp.src(configs.source.iconsSvg + '*svg')
@@ -45,5 +46,5 @@ gulp.task('sprite:svg', () => gulp.src(configs.source.iconsSvg + '*svg')
 
 
 gulp.task('sprite:svg:watch', function() {
-		gulp.watch(configs.source.iconsSvg + '/*.svg', ['sprite:svg']);
+		watch(configs.source.iconsSvg + '/*.svg', ['sprite:svg']);
 });
