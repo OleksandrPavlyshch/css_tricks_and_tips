@@ -3,8 +3,84 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+			font-size: 14px;
+		}
+		label {
+			padding-top: 10px;
+			padding-right: 10px;
+			display: inline-block;
+		}
+		.ch_demo_wrap {
+			text-align: center;
+			padding: 5px;
+			margin: 35px auto 0;
+		}
+		.ch_demo_wrap h1 {
+			margin-bottom: 30px;
+			font-size: 3.5em;
+			margin-top: 0;
+		}
+		.ch_demo_wrap p {
+			border: 1px solid #000;
+			font-size: 1.5em;
+			margin: auto;
+			padding: 10px 0;
+		}
+		#pr:checked ~ .ch_demo_wrap p {
+			width: 72%;
+		}
+		#ch:checked ~ .ch_demo_wrap p {
+			width: 50ch;
+		}
+		#vw:checked ~ .ch_demo_wrap {
+			font-size: 2vw;
+		}
+		#fs1:checked ~ .ch_demo_wrap {
+			font-size: 2vw;
+		}
+		#fs2:checked ~ .ch_demo_wrap {
+			font-size: 14px;
+		}
+		#fs3:checked ~ .ch_demo_wrap {
+			font-size: 2.5vw;
+		}
+	</style>
 </head>
 <body>
+	<input type="radio" checked="checked" name="font-size" id="fs1">
+	<label for="vw">2vw</label>
+	<input type="radio" name="font-size" id="fs2">
+	<label for="fs1">14px</label>
+	<input type="radio" name="font-size" id="fs3">
+	<label for="fs2">2.5vw</label>
+	&nbsp;
+	&nbsp;
+	&nbsp;
+	&nbsp;
+	&nbsp;
+	&nbsp;
+
+	<input type="radio" checked="checked" name="units" id="pr">
+	<label for="pr">Percents</label>
+	<input type="radio" name="units" id="ch">
+	<label for="ch">CH</label>
+
+	<div class="ch_demo_wrap">
+		<h1>
+			Text header
+		</h1>
+		<p>
+			<span style="text-align: center; display: block;">Some text at 3 lines </span>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit laborum possimus, sint deleniti nulla, ipsa!
+		</p>
+	</div>
 	
 </body>
 </html>
