@@ -5,8 +5,7 @@ const gulp = require('gulp')
 	, changed = require('gulp-changed')
 	, prettify = require('gulp-prettify')
 	, frontMatter = require('gulp-front-matter')
-	, configs = require('../configs')
-	, watch = require('gulp-watch');
+	, configs = require('../configs');
 
 function renderHtml(onlyChanged){
 	nunjucksRender.nunjucks.configure({
@@ -44,11 +43,11 @@ gulp.task('nunjucks:changed', function() {
 });
 
 gulp.task('nunjucks:watch', function() {
-	watch([
+	gulp.watch([
 		configs.source.nunjucks + '/**/[^_]*.html'
 	], ['nunjucks:changed']);
 
-	watch([
+	gulp.watch([
 		configs.source.nunjucks + '/_*.html', configs.source.root + 'elements/**/*.html'
 	], ['nunjucks']);
 });

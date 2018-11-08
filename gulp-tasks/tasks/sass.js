@@ -25,8 +25,7 @@ const gulp = require('gulp')
 		}
 
 		return 1;
-	}
-	, watch = require('gulp-watch');
+};
 
 //sass
 gulp.task('sass', () => {
@@ -56,5 +55,5 @@ gulp.task('sass', () => {
 });
 
 gulp.task('sass:watch', () => {
-	watch(configs.source.sass, ['sass']);
+	gulp.watch(configs.source.sass, ['sass']);
 });
