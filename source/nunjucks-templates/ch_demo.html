@@ -16,6 +16,8 @@
 			padding-top: 10px;
 			padding-right: 10px;
 			display: inline-block;
+			font-size: 16px;
+			text-transform: uppercase;
 		}
 		.ch_demo_wrap {
 			text-align: center;
@@ -37,7 +39,7 @@
 			width: 72%;
 		}
 		#ch:checked ~ .ch_demo_wrap p {
-			width: 50ch;
+			max-width: 50ch;
 		}
 		#vw:checked ~ .ch_demo_wrap {
 			font-size: 2vw;
@@ -55,11 +57,11 @@
 </head>
 <body>
 	<input type="radio" checked="checked" name="font-size" id="fs1">
-	<label for="vw">2vw</label>
+	<label for="fs1">2vw</label>
 	<input type="radio" name="font-size" id="fs2">
-	<label for="fs1">14px</label>
+	<label for="fs2">14px</label>
 	<input type="radio" name="font-size" id="fs3">
-	<label for="fs2">2.5vw</label>
+	<label for="fs3">2.5vw</label>
 	&nbsp;
 	&nbsp;
 	&nbsp;
