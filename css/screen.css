@@ -803,7 +803,7 @@ input[type="submit"] {
   height: 280px;
   display: inline-block;
   text-align: center;
-  margin: 15px 30px;
+  margin: 10px 30px;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   background-color: #fff;
@@ -813,8 +813,6 @@ input[type="submit"] {
 }
 
 .custom_shape-demo:hover {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0% 100%, 0% 100%);
 }
