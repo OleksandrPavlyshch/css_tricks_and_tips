@@ -26,9 +26,34 @@
 </section>
 
 <section class="slide">
-	
+	<h2>
+		Shadow for custom shape
+	</h2>
+
+	<pre>
+		<code>.hexagon {</code>
+		<code>	clip-path: polygon(50% 0%, 100% 25%, 100% ....);</code>
+		<code>}</code>
+		<code>.shadow-wrap {</code>
+		<code>	filter: drop-shadow(0 0 10px #000);</code>
+		<code>}</code>
+	</pre>
 </section>
 
 <section class="slide">
-	
+	<h2>
+		Border for custom shape
+	</h2>
+	<pre>
+		<code>.hexagon {</code>
+		<code>	background-color: #fc5c7d;</code>
+		<code>}</code>
+		<code>.hexagon::before {</code>
+		<code>	clip-path: inherit;</code>
+		<code>	background-color: #fff;</code>
+		<code>	position: absolute;</code>
+		<code>	...</code>
+		<code>}</code>
+
+	</pre>
 </section>
