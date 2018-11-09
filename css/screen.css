@@ -842,6 +842,7 @@ input[type="submit"] {
   top: 10px;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
+  z-index: 1;
 }
 
 .custom_shape-demo.is-border {
