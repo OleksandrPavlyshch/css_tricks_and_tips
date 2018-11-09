@@ -1,0 +1,45 @@
+.custom_shape-demo,
+	width: 280px
+	height: 280px
+	// border: 1px solid #000
+	display: inline-block
+	text-align: center
+	margin: 15px 30px
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)
+	background-color: #fff
+	position: relative
+	transition: all .6s ease
+	&:hover
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0% 100%, 0% 100%)
+	&::before
+		content: ''
+	&-shadow_wrap
+		display: inline-block
+		filter: drop-shadow(0 0 10px rgba(0,0,0,1));
+	&-wrap
+		margin: 0 auto
+		padding: 0 20px
+		text-align: center
+	&.is-gradient-border,
+	&.is-border
+		&::before
+			clip-path: inherit
+			background-color: #fff
+			position: absolute
+			left: 10px
+			top: 10px
+			width: calc(100% - 20px)
+			height: calc(100% - 20px)
+	&.is-border
+		background-color: #fc5c7d
+	&.is-gradient-border
+		background-image: linear-gradient(#fc5c7d, #6a82fb)
+	img
+		max-width: 70%
+		max-height: 70%
+		margin-top: 15%
+		display: inline-block
+		position: relative
+		z-index: 3
+		vertical-align: middle
