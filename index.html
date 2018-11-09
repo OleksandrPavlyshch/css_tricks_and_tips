@@ -147,7 +147,7 @@
     </div>
     <div class="slide">
       <h2>REM</h2>
-      <p>Единица rem задаёт размер относительно размера шрифта <html> элемента.</p>
+      <p>Единица rem задаёт размер относительно размера шрифта html элемента.</p>
     </div>
     <div class="slide">
       <pre>
@@ -156,7 +156,7 @@
 		<code>}</code>
 		<code>p {</code>
 		<code>	font-size: 1rem //16px</code>
-		<code>	padding: .5eem // 8x</code>
+		<code>	padding: .5rem // 8x</code>
 		<code>	margin: 2rem // 32px</code>
 		<code>}</code>
 	</pre>
@@ -265,11 +265,13 @@
     </div>
     <div class="slide">
       <pre>
-		<code>div{color:red;}</code>
+		<code>div {</code>
+		<code>	color:red;</code>
+		<code>}</code>
 		<code>	</code>
-		<code>@media (hover) </code>
-		<code>(min-width:0\0) </code>
-		<code>(min--moz-device-pixel-ratio:0){</code>
+		<code>@media (hover),  </code>
+		<code>(min-width:0\0),  </code>
+		<code>(min--moz-device-pixel-ratio:0) {</code>
 		<code>	/* Устройство поддерживает hover*/</code>
 		<code>	div{color:green;}</code>
 		<code>}</code>
@@ -456,7 +458,7 @@
 		<code>}</code>
 		<code>	</code>
 		<code>.gradient_text:hover {</code>
-		<code>	background-position: 100% 0</code>
+		<code>	background-position: 100% 0;</code>
 		<code>}</code>
 	</pre>
     </div>
@@ -508,13 +510,13 @@
 	</pre>
     </section>
     <div class="slide">
-      <h2 class="shout">Нестандартные фигуры</h2>
+      <h2 class="shout">CSS Figures</h2>
     </div>
     <div class="slide">
       <iframe class="all_screen_iframe" scrolling='no' title='Skewed Flexbox Panels' src='//codepen.io/hexagoncircle/embed/yOwvQV/?height=368&theme-id=23417&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/hexagoncircle/pen/yOwvQV/'>Skewed Flexbox Panels</a> by Ryan Mulligan (<a href='https://codepen.io/hexagoncircle'>@hexagoncircle</a>) on <a href='https://codepen.io'>CodePen</a>. </iframe>
     </div>
     <div class="slide">
-      <h2>Параллелограм</h2>
+      <h2>Parallelogram</h2>
       <pre>
 		<code>.panel {</code>
 		<code>	transform: skew(45deg);</code>
@@ -551,7 +553,7 @@
       </div>
     </div>
     <div class="slide">
-      <h2>Трапеция</h2>
+      <h2>Trapezoid</h2>
       <pre>
 		<code>.tab::before {</code>
 		<code>	transform-origin: 50% 100%;</code>
@@ -566,11 +568,32 @@
     </div>
     <div class="slide centr-align">
       <div class="romb-demo romb1">
-        <img src="./img/cat_rect.jpg" alt="">
+        <img src="./img/cat_rect.jpg" alt="Cat">
       </div>
+    </div>
+    <div class="slide">
+      <h2>Rhombus</h2>
+      <pre>
+		<code>.romb1 {</code>
+		<code>	transform: rotateZ(-45deg);</code>
+		<code>}</code>
+		<code>.romb img{</code>
+		<code class="mark next">	transform: scale(1.4) rotateZ(45deg);</code>
+		<code>}</code>
+	</pre>
+    </div>
+    <div class="slide centr-align">
       <div class="romb-demo romb2">
-        <img src="./img/cat_rect.jpg" alt="">
+        <img src="./img/cat_rect.jpg" alt="Cat">
       </div>
+    </div>
+    <div class="slide">
+      <h2>Rhombus</h2>
+      <pre>
+		<code>.romb2 {</code>
+		<code>	clip-path: polygon(50% 0%, 90% 50% ....);</code>
+		<code>}</code>
+	</pre>
     </div>
     <div class="slide">
       <h2 class="shout">Очень нестандартные фигуры</h2>
@@ -679,7 +702,13 @@
       <h2>Minimal font size with calc()</h2>
       <pre>
 		<code>p {</code>
-		<code>	font-size: calc(16px + 2vw);</code>
+		<code>	font-size: calc(10px + 2vw);</code>
+		<code>}</code>
+		<code> </code>
+		<code>@media screen and ( min-width: 1024px ) {</code>
+		<code>	p {</code>
+		<code>		font-size: 24px;</code>
+		<code>	}</code>
 		<code>}</code>
 	</pre>
     </section>
@@ -730,7 +759,7 @@
 		<code>.block {</code>
 		<code>	min-width: 50%;   /* 250px WINNER */</code>
 		<code>	max-width: 100%;  /* 500px */</code>
-		<code>	width: calc(480px - 100%) * 480); /* -9600px */</code>
+		<code>	width: calc((480px - 100%) * 480); /* -9600px */</code>
 		<code>}</code>
 	</pre>
     </section>
@@ -742,7 +771,7 @@
 		<code>.block {</code>
 		<code>	min-width: 50%;  /* 200px */</code>
 		<code>	max-width: 100%; /* 400px WINNER */</code>
-		<code>	width: calc(480px - 100%) * 480); /* 38400px */</code>
+		<code>	width: calc((480px - 100%) * 480); /* 38400px */</code>
 		<code>}</code>
 	</pre>
     </section>
