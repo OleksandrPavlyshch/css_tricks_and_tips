@@ -798,6 +798,73 @@ input[type="submit"] {
   background-position: 100% 0;
 }
 
+.custom_shape-demo {
+  width: 280px;
+  height: 280px;
+  display: inline-block;
+  text-align: center;
+  margin: 15px 30px;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background-color: #fff;
+  position: relative;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.custom_shape-demo:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0% 100%, 0% 100%);
+}
+
+.custom_shape-demo::before {
+  content: '';
+}
+
+.custom_shape-demo-shadow_wrap {
+  display: inline-block;
+  -webkit-filter: drop-shadow(0 0 10px black);
+  filter: drop-shadow(0 0 10px black);
+}
+
+.custom_shape-demo-wrap {
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.custom_shape-demo.is-gradient-border::before, .custom_shape-demo.is-border::before {
+  -webkit-clip-path: inherit;
+  clip-path: inherit;
+  background-color: #fff;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+}
+
+.custom_shape-demo.is-border {
+  background-color: #fc5c7d;
+}
+
+.custom_shape-demo.is-gradient-border {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fc5c7d), to(#6a82fb));
+  background-image: linear-gradient(#fc5c7d, #6a82fb);
+}
+
+.custom_shape-demo img {
+  max-width: 70%;
+  max-height: 70%;
+  margin-top: 15%;
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  vertical-align: middle;
+}
+
 .vertical_text_demo h3 {
   text-align: center;
   margin-bottom: 15px;
