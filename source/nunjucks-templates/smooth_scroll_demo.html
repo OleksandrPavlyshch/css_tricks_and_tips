@@ -5,6 +5,20 @@
 	<title>Variable demo</title>
 	<link rel="stylesheet" media="all" href="css/screen.css">
 </head>
+<style>
+	.section {
+		position: relative;
+	}
+	.section img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		max-height: 80%;
+		margin: 90px auto 0;
+	}
+</style>
 <body class="smooth_scroll_demo">
 		<div class="m1 menu">
 			<div id="menu-center">
@@ -24,7 +38,9 @@
 				</ul>
 			</div>
 		</div>
-		<div id="home" class="section"></div>
+		<div id="home" class="section">
+			<img src="./img/man.jpg" alt="Man">
+		</div>
 		<div id="portfolio" class="section"></div>
 		<div id="about" class="section"></div>
 		<div id="contact" class="section"></div>
