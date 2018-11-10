@@ -33,26 +33,33 @@
 			color: #fff
 			background: linear-gradient(#fc5c7d, #6a82fb)
 		&-4
-			color: #3f669f
-			background: linear-gradient(#fc5c7d, #6a82fb)
+			color: #64f38c
+			background: linear-gradient(#23074d, #cc5333)
 		&-1::before
-			background-color: red
+			-webkit-text-stroke: 4px #fff
+			text-stroke: 4px #fff
+			color: transparent
 		&-2::before
-			background: blue
+			color: #fff
 		&-3::before
-			color: #000
-			background-color: pink
+			color: transparent
+			-webkit-text-stroke: 4px #64f38c
+			text-stroke: 4px #64f38c
 		&-4::before
-			background-color: green
+			color: #64f38c
 		&::before
 			position: fixed
 			left: 0
 			right: 0
 			bottom: 0
 			margin: auto
+			text-align: center
 			top: 0
-			content: ''
-			width: 200px
+			content: 'Text'
+			text-transform: uppercase
+			font-size: 120px
+			font-weight: 700
+			// width: 200px
 			height: 200px
-			border: 1px solid #000
+			// border: 1px solid #000
 	
