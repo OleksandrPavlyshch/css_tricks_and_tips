@@ -906,6 +906,7 @@ input[type="submit"] {
   height: 75px;
   background-color: black;
   position: fixed;
+  z-index: 10;
   background-color: rgba(4, 180, 49, 0.6);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
